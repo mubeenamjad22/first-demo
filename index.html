@@ -1,12 +1,382 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="background-color: whitesmoke;" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border: 2px solid grey;
+      padding: 15px;
+      color: darkblue;
+      border-style: hidden;
+    }
+
+    tr,
+    td,
+    th {
+      border: 2px solid gray;
+      padding: 15px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    video {
+      border: 2px solid whitesmoke;
+      border-radius: 10px;
+    }
+
+    html {
+      font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+
 </head>
+
 <body>
-    <h1>Hello world</h1>
-    <h2>HEY! PROGRAMMER</h2>
+  <h1 align="center"><u><mark>Table Using Pure Html</mark></u></h1>
+  <table align="center">
+    <thead>
+      <tr style="background-color: darkgrey;">
+        <th>Name</th>
+        <th>gender</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Mubeen</td>
+        <td>Male</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Areeb</td>
+        <td>Male</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Anna</td>
+        <td>Female</td>
+        <td>23</td>
+      </tr>
+    </thead>
+  </table>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+<h1 align="center"><u><mark>Table Using Pure Html</mark></u></h1>
+  <table align="center">
+    <thead>
+      <tr>
+        <th style="background-color: lightblue;" colspan="7">Time-Table</th>
+      </tr>
+      <tr style="background-color: lightgreen;">
+        <th style="background-color: lightblue;" rowspan="7">Hours</th>
+        <th>mon</th>
+        <th>tues</th>
+        <th>wed</th>
+        <th>thurs</th>
+        <th>fri</th>
+        <th>sat</th>
+      </tr>
+      <tr>
+        <td>math</td>
+        <td>english</td>
+        <td>science</td>
+        <td>g.k</td>
+        <td>urdu</td>
+        <td>maths</td>
+      </tr>
+      <tr>
+        <td>englsih</td>
+        <td>urdu</td>
+        <td>bio</td>
+        <td>math</td>
+        <td>chem</td>
+        <td>pakstd</td>
+      </tr>
+      <tr>
+        <td colspan="6">Lunch</td>
+      </tr>
+      <tr>
+        <td>pakstd</td>
+        <td>english</td>
+        <td>computer</td>
+        <td>math</td>
+        <td>science</td>
+        <td rowspan="2">Games</td>
+      </tr>
+      <tr>
+        <td>pakstd</td>
+        <td>english</td>
+        <td>urdu</td>
+        <td>math</td>
+        <td>computer</td>
+      </tr>
+    </thead>
+  </table>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+  <br>
+  <h1 align="center"><u><mark>Audio Using Pure Html</mark></u></h1>
+  <audio controls autoplay loop preload="auto">
+    <source src="C:\Users\AIZAZ\Documents\Four-page--web\four-page-website\audio.mp3" type="audio/mpeg">
+  </audio>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+  <br>
+  <h1 align="center"><u><mark>Video Using Pure Html</mark></u></h1>
+  <video width="25%" height="20%" controls poster="c:\Users\AIZAZ\Downloads\download (1).png">
+    <source src="c:\Users\AIZAZ\Videos\Icecream Screen Recorder\Video_2023_08_09-2.webm">
+  </video>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+  <h1 align="center"><u><mark>Html Form Using Pure Html</mark></u></h1>
+  <form>
+    <fieldset>
+      <legend><mark>Contact Info :</mark></legend>
+      <div>
+        <label for="username">username :</label>
+        <input type="text" name="username" id="username" placeholder="enter your userame">
+      </div>
+      <br>
+      <div>
+        <label for="email">Enter your Email :</label>
+        <input placeholder="enter your Email" type="email" name="email" id="email">
+      </div>
+      <br>
+      <div>
+        <label for="number">enter your contact number :</label>
+        <input placeholder="enter your contact" type="number" name="number" id="number">
+      </div>
+      <br>
+      <div>
+        <button value="submit">
+          submit
+        </button>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><mark>Personal Info :</mark></legend>
+      <div>
+        <label for="username">username :</label>
+        <input placeholder="enter your username" type="text" name="username" id="username">
+      </div>
+      <br>
+      <div>
+        <label for="password">enter your password :</label>
+        <input placeholder="enter your password" type="password" name="password" id="password">
+      </div>
+      <br>
+      <div>
+        <label for="gender">Enter your gender :</label>
+        <input type="radio" name="gender" id="gender" value="Male">Male
+        <input type="radio" name="gender" id="gender" value="Female">Female
+      </div>
+      <br>
+      <div>
+        <label for="interest">Enter your interest :</label>
+        <input type="checkbox" name="interest" id="interest" value="Sports">Sports
+        <input type="checkbox" name="interest" id="interest" value="Music">Music
+      </div>
+      <br>
+      <div>
+        <label for="countries">Select your fav country :</label>
+        <select style="text-align: center;" name="" id="countries">
+          <option value="UK">UK</option>
+          <option value="pakistan">pakistan</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="countries">Select your fav country :</label>
+        <input type="text" name="country" id="country" list="countries">
+        <datalist id="countries">
+          <option value="UK">UK</option>
+          <option value="pakistan">pakistan</option>
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+        </datalist>
+      </div>
+      <br>
+      <div>
+        <label for="file">Choose file :</label>
+        <input type="file" name="file" id="file">
+      </div>
+      <br>
+      <div>
+        <label for="range">Range :</label>
+        <input type="range" name="" id="range">
+      </div>
+      <br>
+      <div>
+        <label for="birthdate">Enter your birthdate :</label>
+        <input type="date" name="" id="birthdate">
+      </div>
+      <br>
+      <div>
+        <label for="Appointment-Time">Appointment-Time :</label>
+        <input type="time" name="" id="Appointment-Time">
+      </div>
+      <br>
+      <div>
+        <label for="color">fav-color :</label>
+        <input type="color" name="color" id="color">
+      </div>
+      <br>
+      <div>
+        <label for="month">Choose month-year :</label>
+        <input type="month" name="month" id="month">
+      </div>
+      <br>
+      <div>
+        <label for="week">Enter vacations week :</label>
+        <input type="week" name="" id="week">
+      </div>
+      <br>
+      <div>
+        <button value="submit">
+          submit
+        </button>
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><mark>Comment Us :</mark></legend>
+      <div>
+        <label for="comment">Message</label>
+        <textarea name="comment" id="comment" cols="25" rows="5" placeholder="Enter your comments!"></textarea>
+      </div>
+      <br>
+      <div>
+        <button value="submit">
+          submit
+        </button>
+      </div>
+    </fieldset>
+  </form>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+  <h1 align="center"><u><mark>Html Form Using Pure Html</mark></u></h1>
+  <br>
+  <div>
+    <form>
+      <div>
+        <label for="username">username :</label>
+        <input type="text" name="" id="username" placeholder="enter the user name">
+      </div>
+      <br>
+      <div>
+        <label for="email">enter your email :</label>
+        <input type="email" name="" id="email" placeholder="enter your email " required>
+      </div>
+      <br>
+      <div>
+        <label for="password">Enter The Password :</label>
+        <input type="password" name="" id="password" placeholder="enter the password" required pattern="!, #, %,@">
+
+      </div>
+      <br>
+      <div>
+        <label for="number">enter your number :</label>
+        <input type="number" name="" id="number" placeholder="enter your mobile number">
+      </div>
+      <br>
+      <div>
+        <label for="gender">Gender :</label>
+        <input type="radio" name="gender" id="gender" value="Male" placeholder="enter your gender">Male
+        <input type="radio" name="gender" id="gender" value="Female" placeholder="enter your gender">Female
+      </div>
+      <br>
+      <div>
+        <label for="interest">Interest :</label>
+        <input type="checkbox" name="interest" id="interest" value="Music" placeholder="enter your gender">Music
+        <input type="checkbox" name="interest" id="interest" value="Sports" placeholder="enter your gender">Sports
+        <input type="checkbox" name="interest" id="interest" value="Traveling" placeholder="enter your gender">Traveling
+        <input type="checkbox" name="interest" id="interest" value="Photography"
+          placeholder="enter your gender">Photography
+      </div>
+      <br>
+
+      <div>
+        <label for="countries">Your countries :</label>
+        <select style="width: 10%; text-align: center;" name="countries" id="countries">
+          <option value="USA">USA</option>
+          <option value="pakistan">Pakistan</option>
+          <option value="UAE">UAE</option>
+          <option value="Dubai">Dubai</option>
+          <option value="India">India</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="country">Select your country :</label>
+        <input type="text" name="country" id="country" list="countries">
+        <datalist id="countries">
+          <option value="UK"></option>
+          <option value="USA"></option>
+          <option value="pakistan"></option>
+          <option value="UAE"></option>
+          <option value="Dubai"></option>
+          <option value="India"></option>
+        </datalist>
+      </div>
+      <br>
+      <div>
+        <label for="file">Select file :</label>
+        <input type="file" name="" id="filUpload">
+      </div>
+      <br>
+      <div>
+        <label for="birthdate">Enter your birthdate :</label>
+        <input type="date" name="" id="birthdate">
+      </div>
+      <br>
+      <div>
+        <label for="Appointment Time">Appointment Time :</label>
+        <input type="time" name="" id="Appointment Time">
+      </div>
+      <br>
+      <div>
+        <label for="range">Range :</label>
+        <input type="range" name="" id="range" min="0" max="100" value="80">
+      </div>
+      <br>
+      <div>
+        <label for="fav-color">choose fav-color</label>
+        <input type="color" name="" id="fav-color">
+      </div>
+      <br>
+      <div>
+        <label for="website">Enter your website :</label>
+        <input type="url" name="" id="website">
+      </div>
+      <br>
+      <div>
+        <label for="month-year">choose month-year: </label>
+        <input type="month" name="" id="month-year">
+      </div>
+      <br>
+      <div>
+        <label for="Week">choose a Week: </label>
+        <input type="week" name="" id="Week">
+      </div>
+      <br>
+
+
+      <div>
+        <label for="textarea">Message </label>
+        <textarea name="" id="textarea" cols="20" rows="5" placeholder="Write a comment!"></textarea>
+      </div>
+      <br>
+      <div>
+        <button value="submit">submit</button>
+      </div>
+    </form>
+  </div>
+  <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
 </body>
+
 </html>
